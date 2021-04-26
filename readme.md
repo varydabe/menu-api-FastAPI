@@ -1,7 +1,7 @@
-# Tell API
+# MENU API
 
-Tell API written with FastAPI Python and needs Python 3.6+ <br>
-This API requires MongoDB as the Database.
+MENU API written with FastAPI Python and needs Python 3.6+ <br>
+This API requires MongoDB as the Database. <br>
 
 ## Installation
 
@@ -18,15 +18,4 @@ pip install -r requirements.txt
 
 ```bash
 uvicorn main:app --reload --port 5000
-```
-
-## Beat and Worker
-- Worker
-```bash
-celery -A app.cores.celery_init.app worker --loglevel=info
-```
-
-- Beat (Automated Tasks)
-```bash
-celery -A app.cores.celery_init.app beat --schedule /tmp/celerybeatschedule --loglevel=info --pidfile /tmp/celerybeat.pid
 ```
