@@ -1,0 +1,11 @@
+.pytest_cache
+venv
+.idea
+.pyc
+.env
+celerybeat-schedule
+*.pyc
+.pytest_cache
+__pycache__
+.idea
+.vscode
